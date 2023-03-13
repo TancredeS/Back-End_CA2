@@ -1,5 +1,5 @@
 # Back-End_CA2
-CA2 of my back-end semester
+CA2 of my back-end semester.
 The new created files has been moved in the 'templates' folder, and then in the 'registration' folder.
 
 For this defense of the project, it was necessary to keep the project which had been started in the first defense, while adding a security with a system of log-in log-out, a system of sign-in, and another to change the password in the user if this one forgot his. I used the tutorials provided by the Django website for these 3 tasks, which made this defense much easier to do than the first one, in which I had to create the application from scratch.
