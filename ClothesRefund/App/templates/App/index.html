@@ -7,6 +7,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--  This page is the index page, where the user can go to all the existing pages, and so chosing what action he wants to do.-->
+
+    <!-- CA2:
+    Now the page can check if the user has registered when he enters this page. If yes, he can see the normal index page. If he hasn't registered, he is directly redirected to the log-in page. -->
 {% if user.is_authenticated %}
     <header class="text-center-desktop text-center-mobile theme-light">
         <div class="container-text">		
@@ -32,7 +35,11 @@
 				<figure>
 					<img src="../../../static/img/clothes-removebg-preview.png" alt="Placeholder image">
 				</figure>
+            <!--  CA2 : 
+            Here is the button in the home page to log-out.-->
         <p><a href="{% url 'logout' %}" class="btn btn-solid"><i class="fa-solid fa-right-from-bracket"></i></i>Log Out</a></p>
+        
+
     </header>
     {% else %}
         <a href="{% url 'login' %}"></a>
